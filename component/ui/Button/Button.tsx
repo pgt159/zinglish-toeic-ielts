@@ -20,7 +20,7 @@ const Button = ({
   const baseStyle =
     "flex inline-flex items-center justify-center font-medium rounded-md transition-colors duration-200 rounded-button cursor-pointer";
   const variants = {
-    primary: "bg-primary text-primary-foreground hover:bg-primary/90",
+    primary: "bg-primary text-foreground hover:bg-primary/90 text-[15px]",
     secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
     outline:
       "bg-destructive text-destructive-foreground hover:bg-destructive/90",
