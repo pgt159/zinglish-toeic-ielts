@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --font-inter-local: "Inter", sans-serif;
+  --primary: #2479d8;
+  --primary-light: #f3effe;
+  --primary-pale: #f8fbfe;
+  --ielts: #7962c8;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --foreground: #111827;
+  --body: #374151;
+  --muted: #6b7280;
+  --surface: #f9fafb;
+  --border: #e5e7eb;
+  --radius-button: 1px;
+  --radius-card: 18px;
+}
+
+@theme inline {
+  --font-inter: var(--font-inter-local);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-pale: var(--primary-pale);
+  --color-ielts: var(--ielts);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+
+  --color-foreground: var(--foreground);
+  --color-body: var(--body);
+  --color-muted: var(--muted);
+
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+
+  /* Border radius */
+  --radius-button: 0.75rem;
+  --radius-card: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter);
+}
